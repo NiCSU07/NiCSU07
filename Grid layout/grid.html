@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        body {
+            display: grid;
+            gap: 10px;
+            margin: 0;
+        }
+        .row1 {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+        }
+        .row2 {
+            display: grid;
+            grid-template-areas: 
+            'one one one'
+            'two three four'
+            'two five .'
+            'two . .';
+        }
+        .box {
+            display: flex;
+            font-size: 25px;
+            padding: 20px;
+        }
+        .red {
+            background-color: rgb(221, 55, 55);
+            border: 2px solid black
+        }
+        .green {
+            background-color: rgb(38, 235, 38);
+            border: 2px solid black
+        }
+
+        .one {
+            grid-area: one;
+        }
+
+        .two {
+            grid-area: two;
+            height: 10em;
+        }
+
+        .three {
+            grid-area: three;
+        }
+
+        .four {
+            grid-area: four;
+        }
+
+        .five {
+            grid-area: five;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="row1">
+        <div class="box red">One</div>
+        <div class="box red">Two</div>
+        <div class="box red">Three</div>
+        <div class="box red">Four</div>
+        <div class="box red">Five</div>
+    </div>
+    <div class="row2">
+        <div class="box green one">One</div>
+        <div class="box green two">Two</div>
+        <div class="box green three">Three</div>
+        <div class="box green four">Four</div>
+        <div class="box green five">Five</div>
+    </div>
+</body>
+</html>
