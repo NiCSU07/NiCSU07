@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.box {
+  padding: 60px;
+}
+
+.green {
+  background-color: rgb(54, 223, 54);
+  border: 2px solid black;
+  padding: 50px;
+}
+
+.red {
+  background-color: rgb(218, 58, 58);
+  border: 2px solid black;
+  padding: 30px;
+  width: 150px;
+}
+
+.two {
+  width: 300px;
+}
